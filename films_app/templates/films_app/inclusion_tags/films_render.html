@@ -1,0 +1,8 @@
+{% for film in films %}
+    <div class="film" data-genres="{{ film.genre|lower }}">
+        <p>Назва фільму: {{ film.name }}</p>
+        <p>Жанр: {{ film.genre }}</p>
+        <img src="{{ film.image.url }}" alt="Фото фільму">
+        <p>{{ film.description }}</p>
+    </div>
+{% endfor %}

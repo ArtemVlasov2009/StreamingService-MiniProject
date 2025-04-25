@@ -1,0 +1,10 @@
+{% load static %}
+
+<div>
+    {% for genre in genres %}
+        <input type="checkbox" id="{{ genre }}" class="filter">
+        <label for="{{ genre }}">{{ genre }}</label>
+    {% endfor %}
+</div>
+
+<script src="{% static 'js/get_genre.js' %}" defer></script>
